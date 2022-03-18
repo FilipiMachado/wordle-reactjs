@@ -1,3 +1,7 @@
+import Board from "./components/Board";
+import Keyboard from "./components/Keyboard";
+
+/* Styles */
 import './App.css'
 
 function App() {
