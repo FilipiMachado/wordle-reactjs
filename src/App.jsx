@@ -2,8 +2,12 @@ import './App.css'
 
 function App() {
   return (
-    <div>
-      App
+    <div className="App">
+      <nav>
+        <h1>Wordle Game</h1>
+        <Board />
+        <Keyboard />
+      </nav>
     </div>
   )
 }
