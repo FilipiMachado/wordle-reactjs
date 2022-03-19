@@ -2,16 +2,17 @@ import React, { useContext } from 'react';
 import { AppContext } from '../App';
 
 function Key({ keyVal, bigKey }) {
-  const { board, setBoard } = useContext(AppContext);
+  const { board, setBoard, currAttempt, setCurrAttempt } = useContext(AppContext);
 
   const selectLetter = () => {
     const newBoard = [...board]
-    newBoard[0][0] = keyVal
+    newBoard[currAttempt.attempt][currAttempt.letterPos] = keyVal
     setBoard(newBoard)
+    setCurrAttempt({ ...currAttempt, letterPos: currAttempt.letterPos + 1 })
   }
 
   return (
-    <div className="key" id={bigKey && 'big'} onClick={selectLetter}>
+    <div className="key" id={bigKey && "big"} onClick={selectLetter}>
       { keyVal }
     </div>
   )
