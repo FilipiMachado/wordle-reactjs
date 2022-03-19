@@ -1,10 +1,8 @@
 .App {
-  text-align: center;
-  background-color: #121212;
-  width: 100vw;
+  background-color: #303030;
+  width: 100%;
   height: 100vh;
-  /* display: flex; */
-  color: white;
+  color: #fff;
 }
 
 body {
@@ -16,7 +14,7 @@ nav {
   height: 60px;
   width: 100%;
   margin: 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #808080;
   display: grid;
   place-items: center;
 }
@@ -24,7 +22,7 @@ nav {
 nav h1 {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
-  color: white;
+  color: #62ddff;
   font-size: 45px;
 }
 .game {
@@ -37,9 +35,10 @@ nav h1 {
 }
 
 .board {
-  width: 450px;
-  height: 550px;
-  border: 1px solid black;
+  width: 50%;
+  height: 80%;
+  border: 1px solid #303030;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -49,6 +48,7 @@ nav h1 {
   display: flex;
   flex-direction: row;
   margin: 5px;
+  background-color: #303030;
 }
 
 .letter {
@@ -60,7 +60,8 @@ nav h1 {
   place-items: center;
   font-size: 30px;
   font-weight: bolder;
-  color: white;
+  color: #fff;
+  background-color: #4aa6c0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -73,17 +74,16 @@ nav h1 {
 }
 
 #error {
-  background-color: #3a393c;
+  background-color: tomato;
 }
 
 .keyboard {
-  width: 700px;
-  height: 300px;
-  margin-top: 60px;
+  background-color: #303030;
+  margin: 30px 0px;
 }
 
 .line1 {
-  flex: 33%;
+  flex: 40%;
   display: flex;
   flex-direction: row;
   display: flex;
@@ -91,14 +91,14 @@ nav h1 {
   margin: 5px;
 }
 .line2 {
-  flex: 33%;
+  flex: 40%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 5px;
 }
 .line3 {
-  flex: 33%;
+  flex: 40%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,17 +106,22 @@ nav h1 {
 }
 
 .key {
-  width: 50px;
-  height: 70px;
+  padding: 20px;
   margin: 5px;
   border-radius: 4px;
   display: grid;
   place-items: center;
   font-size: 20px;
-  background-color: grey;
-  color: white;
+  background-color: #808080;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
+}
+
+.key:hover {
+  transition: ease-in-out 0.4s;
+  background-color: #62ddff;
+  border: 1px solid #fff;
 }
 
 #big {
