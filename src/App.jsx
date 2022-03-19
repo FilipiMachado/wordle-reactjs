@@ -9,7 +9,7 @@ export const AppContext = createContext();
 
 function App() {
   const [board, setBoard] = useState(boardDefault);
-  const [currAttempt, setCurrAttempt] = useState({ attempt: 0, letterPost: 0 });
+  const [currAttempt, setCurrAttempt] = useState({ attempt: 0, letterPos: 0 });
 
   return (
     <div className="App">
